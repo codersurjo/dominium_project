@@ -48,7 +48,7 @@
                             <a href="index.html"><img src="assets/images/home/logo.png" alt="Logo image"></a>
                         </div>
                         <!-- menu  -->
-                        <div class="header_menu">
+                        <div class="header_menu menu_show">
                             <ul>
                                 <li><a class="active1" href="#">Mint</a></li>
                                 <li><a href="#">Chart</a></li>
@@ -56,6 +56,23 @@
                                 <li><a href="#">Documentation</a></li>
                                 <li><a href="#">Dashboard</a></li>
                             </ul>
+                        </div>
+
+                        <!-- Humberger menu   -->
+                        <div class="hamburger-menu">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                              <span></span>
+                            </label>
+                        
+                            <ul>
+                                <li><a class="active1" href="#">Mint</a></li>
+                                <li><a href="#">Chart</a></li>
+                                <li><a href="#">Buy $Dom</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Dashboard</a></li>
+                            </ul>
+    
                         </div>
                     </div>
                 </div>
@@ -85,9 +102,15 @@
                     <div class="hero_right"
                         style="background:url(assets/images/home/atwork.png) no-repeat scroll 0 0 / 100% 100%">
                         <div class="hero_car owl-carousel">
-                            <img src="assets/images/home/slider1.png" alt="Slider_img">
-                            <img src="assets/images/home/slider2.png" alt="Slider_img">
-                            <img src="assets/images/home/slider3.png" alt="Slider_img">
+                            <div class="single_car">
+                                <img src="assets/images/home/slider1.png" alt="Slider_img">
+                            </div>
+                            <div class="single_car">
+                                <img src="assets/images/home/slider2.png" alt="Slider_img">
+                            </div>
+                            <div class="single_car">
+                                <img src="assets/images/home/slider3.png" alt="Slider_img">
+                            </div>
                         </div>
 
                         <!-- position  -->
@@ -149,7 +172,7 @@
 
             <div class="row">
                 <!-- single  -->
-                <div class="col-lg-4 s_mar">
+                <div class="col-lg-4 col-md-6 s_mar">
                     <div class="single_safe">
                         <div class="s_img">
                             <img src="assets/images/home/s1.png" alt="Image">
@@ -164,7 +187,7 @@
                     </div>
                 </div>
                 <!-- single  -->
-                <div class="col-lg-4 s_mar">
+                <div class="col-lg-4 col-md-6 s_mar">
                     <div class="single_safe">
                         <div class="s_img">
                             <img src="assets/images/home/s2.png" alt="Image">
@@ -180,7 +203,7 @@
                     </div>
                 </div>
                 <!-- single  -->
-                <div class="col-lg-4 s_mar">
+                <div class="col-lg-4 col-md-6 s_mar">
                     <div class="single_safe">
                         <div class="s_img">
                             <img src="assets/images/home/s3.png" alt="Image">
@@ -574,7 +597,7 @@
     <div class="footer_area_design pt_220">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-sm-6 f_mar">
                     <div class="single_footer">
                         <div class="f_logo">
                             <a href="index.html"><img src="assets/images/home/logo.png" alt="Logo"></a>
@@ -582,7 +605,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-sm-6 f_mar">
                     <div class="single_footer">
                         <h4>Quicklinks</h4>
                         <ul>
@@ -592,7 +615,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-sm-6 f_mar">
                     <div class="single_footer">
                         <h4>Marketplace</h4>
                         <ul>
@@ -602,7 +625,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2  col-sm-6 f_mar">
                     <div class="single_footer">
                         <h4>Company</h4>
                         <ul>

@@ -11,14 +11,15 @@ body{
 	background: #04031A;
 	z-index: 1;
 	position: relative;
+	overflow-x:hidden;
 }
 body:after{
 	position:absolute;
 	content: "";
 	background: url(../images/home/bg.png) no-repeat scroll 0 0 / 100% 100%;
 	width: 100%;
-	height: 90%;
-	top: 5%;
+	height: 88%;
+	top: 0;
 	z-index: -1;
 }
 
@@ -57,6 +58,7 @@ p{
 	color: #FFFFFF;
 	border-radius: 56px;
 	transition: 0.3s;
+	display: flex;
 }
 .p_btn_bg{
 	background: linear-gradient(92.51deg, #3461FF 3.3%, #8454EB 93.12%);
@@ -271,6 +273,7 @@ h4{
 .hero_car img {
 	width: auto !important;
 	max-height: 306px;
+	margin: 0 auto;
 }
 .owl-item.active {
 	display: flex;
@@ -785,4 +788,131 @@ h4{
 }
 .copyright ul li:hover a{
 	opacity: 0.8;
+}
+.single_car {
+	width: 100%;
+}
+
+
+/* Humberger meu  */
+#menu__toggle {
+	opacity: 0;
+	position: absolute;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+	top: 0;
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+	top: 0;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+#menu__toggle:checked~ul {
+	visibility: visible;
+	right: 0;
+}
+
+.menu__btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	z-index: 1;
+	margin-bottom: 0;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: #FFF;
+	-webkit-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+	content: '';
+	top: -8px;
+}
+
+.menu__btn>span::after {
+	content: '';
+	top: 8px;
+}
+
+.hamburger-menu ul {
+	display: block;
+	position: fixed;
+	visibility: hidden;
+	top: 0px;
+	right: -100%;
+	width: 268px;
+	height: 100%;
+	margin: 0;
+	padding: 80px 0;
+	list-style: none;
+	-webkit-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;
+	border-radius: 10px;
+	background: #1E1C45;
+	box-shadow: 0px 34px 24px rgba(0, 0, 0, 0.16);
+}
+
+.hamburger-menu ul li a {
+	display: block;
+	padding: 9px 21px;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	-webkit-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;
+	color: #9A99AD;
+	transition: 0.3s;
+}
+.hamburger-menu ul li:hover a{
+	color: #FFF;
+}
+
+.hamburger-menu {
+	display: none;
+	float: right;
+}
+.waiting_con a {
+	display: inline-block;
+}
+.app_con a {
+	display: inline-block;
+}
+.work_single a {
+	display: inline-block;
+}
+.discover_left a {
+	display: inline-block;
 }
